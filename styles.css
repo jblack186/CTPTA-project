@@ -27,22 +27,43 @@ section, summary, time, mark, audio, video {
 li a {
   width: 100%;
   height: 100%;
-  color: #366496;
+  color: white;
+  list-style: none;
+
 }
 
-li a{
+li .list-tag{
   display: flex;
   justify-content: center;
   align-items: center;
   color: #366496;
   transition: background-color .5s;
   color: .2s;
-
-}
-
-li a:hover {
+  position: relative;
   
 }
+
+.dropdown-container {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.dropdown-container a {
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: solid#366496 1px;
+  width: 50%;
+  text-decoration: none;
+
+}
+
+.dropdown-container a:hover {
+  color: white;
+  background-color: #366496;
+}
+
 
 
 .navs {
@@ -52,19 +73,24 @@ li a:hover {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1000px) {
+  .navs {
+     display: flex;
+     flex-direction: column;
+
+  }
+}
+
+
 .navs li {
   cursor: pointer;
   list-style: none;
-  color: #366496;
   width: 12.8%;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 620;
-  /* font-size: 1.3rem; */
-
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -87,17 +113,57 @@ li a:hover {
 }
 
 
+.list-tag-open {
+  background-color: #1f4268;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: background-color .5s;
+  color: .2s;
+  position: relative;
+
+}
+
+.open-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 100;
+}
 
 
-.navs-list-item a:hover {
+
+ .list-tag:hover {
   list-style: none;
   text-decoration: none;
-  background-color: #366496;
+  background-color: #1f4268;
   color: white;
   transition: background-color .5s;
   color: .2s;
 
 }
+
+.list-tag-media {
+  list-style: none;
+  text-decoration: none;
+  background-color: #1f4268;
+  color: white;
+  transition: background-color .5s;
+  color: .2s;
+
+}
+
+.list-tag-media:hover {
+  list-style: none;
+  text-decoration: none;
+  background-color: #1f4268;
+  color: white;
+  transition: background-color .5s;
+  color: .2s;
+
+}
+
 
 .navs-list-item.join a {
   background-color: dodgerblue;
@@ -118,14 +184,74 @@ li a:hover {
 }
 
 
-.navs-list-dropdown-open {
-  display: block;
+
+.open-media {
+  display: flex;
+  flex-direction: column;
 }
+
 
 .navs-list-dropdown {
   display: none;
+
 }
 
+.second-dropdown-open {
+  display: flex;
+}
+
+.nav-pic {
+  z-index: 100;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  color: white;
+  line-height: 25px;
+}
+
+.nav-pic img {
+  width: 8rem;
+  height: 100px;
+
+}
+
+.dropdown-container {
+  z-index: 98;
+  background-color: #1c3c5f;  
+  position: absolute;
+  left: 0;
+  min-height: 300px;
+  width: 500px;
+  /* width: 340%; */
+  animation-name: opendown;
+  animation-duration: .5s;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-container:active {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  z-index: 98;
+
+  
+}
+
+
+.dropdown-container a {
+  padding-top: 20px;
+}
+
+@keyframes opendown {
+  from {
+      transform: translateY(-100%)
+  }
+  to {
+      transform: translateY(0%);
+  }
+}
 
 @media screen and (min-width: 1000px) {
   .fa.fa-bars {
@@ -133,6 +259,7 @@ li a:hover {
 
   }
 }
+
 
 
 @media screen and (max-width: 1000px) {
@@ -154,7 +281,11 @@ li a:hover {
   background-color: dodgerblue;
 }
 
-
+.navs-list-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
 .navs-list-item.button {
   cursor: pointer;
@@ -167,9 +298,6 @@ li a:hover {
   
 }
 
-.home-dropdown {
-  display: none;
-}
 
 img{
  object-fit: cover;
