@@ -114,49 +114,49 @@ openHome.addEventListener("click", () => {
 
 
 
-openHome.addEventListener("mouseout", () => {
+openHome.addEventListener("mouseleave", () => {
   dropHome.classList.add('navs-list-dropdown');
   navOpen.classList.remove('list-tag-open');
 
 })
 
-openTwo.addEventListener("mouseover", () => {
+openTwo.addEventListener("click", () => {
   dropTwo.classList.remove('navs-list-dropdown');
 })
 
-openTwo.addEventListener("mouseout", () => {
+openTwo.addEventListener("mouseleave", () => {
   dropTwo.classList.add('navs-list-dropdown');
 })
 
-openThree.addEventListener("mouseover", () => {
+openThree.addEventListener("click", () => {
   dropThree.classList.remove('navs-list-dropdown');
 })
 
-openThree.addEventListener("mouseout", () => {
+openThree.addEventListener("mouseleave", () => {
   dropThree.classList.add('navs-list-dropdown');
 })
 
-openFour.addEventListener("mouseover", () => {
+openFour.addEventListener("click", () => {
   dropFour.classList.remove('navs-list-dropdown');
 })
 
-openFour.addEventListener("mouseout", () => {
+openFour.addEventListener("mouseleave", () => {
   dropFour.classList.add('navs-list-dropdown');
 })
 
-openFive.addEventListener("mouseover", () => {
+openFive.addEventListener("click", () => {
   dropFive.classList.remove('navs-list-dropdown');
 })
 
-openFive.addEventListener("mouseout", () => {
+openFive.addEventListener("mouseleave", () => {
   dropFive.classList.add('navs-list-dropdown');
 })
 
-openSix.addEventListener("mouseover", () => {
+openSix.addEventListener("click", () => {
   dropSix.classList.remove('navs-list-dropdown');
 })
 
-openSix.addEventListener("mouseout", () => {
+openSix.addEventListener("mouseleave", () => {
   dropSix.classList.add('navs-list-dropdown');
 })
 

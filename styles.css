@@ -19,7 +19,9 @@ section, summary, time, mark, audio, video {
 
   @media screen and (max-width: 1000px) {
     .header {
+      width: 100%;
        display: flex;
+       justify-content: space-between;
   
     }
   }
@@ -77,6 +79,9 @@ li .list-tag{
   .navs {
      display: flex;
      flex-direction: column;
+     align-items: center;
+     width: 100%;
+     width: 200px;
 
   }
 }
@@ -96,7 +101,7 @@ li .list-tag{
 @media screen and (max-width: 1024px) {
   .navs li{
      height: 100px;
-     width: 40%;
+     width: 100%;
 
 
 
@@ -105,12 +110,12 @@ li .list-tag{
 
 
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   img.pta-logo{
-     /* width: 30rem; */
+     width: 3rem;
 
   }
-}
+} */
 
 
 .list-tag-open {
@@ -151,6 +156,7 @@ li .list-tag{
   color: white;
   transition: background-color .5s;
   color: .2s;
+  width: 300px;
 
 }
 
@@ -179,10 +185,9 @@ li .list-tag{
 @media screen and (max-width: 1000px) {
   .navs li.navs-list-item {
      display: none;
-
+    width: 100%;
   }
 }
-
 
 
 .open-media {
