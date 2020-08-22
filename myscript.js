@@ -173,10 +173,18 @@ for (var i = 0; i < mediaOpen.length; i++) {
 }
 
 for (var i = 0; i < navItem.length; i++) {
-  // navItem[i].classList.remove('list-tag');
   navItem[i].classList.remove('nav-list-dropdown');
 
-  // navItem[i].classList.add('list-tag-media');
 
 }
 })
+
+const missionSlide = document.querySelector(".mission-container-closed");
+
+window.addEventListener('scroll', function(){ 
+  if (window.scrollY > 900) {
+    missionSlide.classList.remove('mission-container-closed');
+    missionSlide.classList.add('mission-container');
+
+  }
+});
