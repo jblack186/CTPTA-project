@@ -188,3 +188,49 @@ window.addEventListener('scroll', function(){
 
   }
 });
+
+const buttonHover = document.querySelector(".news-box.one");
+const button = document.querySelector(".news-box.one button");
+
+const buttonHoverTwo = document.querySelector(".news-box.two");
+const buttonTwo = document.querySelector(".news-box.two button");
+
+const buttonHoverThree = document.querySelector(".news-box.three");
+const buttonThree = document.querySelector(".news-box.three button");
+
+const buttonHoverFour = document.querySelector(".news-box.four");
+const buttonFour = document.querySelector(".news-box.four button");
+
+
+buttonHover.addEventListener('mouseover', () => {
+  console.log('yo')
+  button.classList.add('news-box-hover')
+})
+
+buttonHover.addEventListener('mouseleave', () => {
+  button.classList.remove('news-box-hover')
+})
+
+buttonHoverTwo.addEventListener('mouseover', () => {
+  buttonTwo.classList.add('news-box-hover')
+})
+
+buttonHoverTwo.addEventListener('mouseleave', () => {
+  buttonTwo.classList.remove('news-box-hover')
+})
+
+buttonHoverThree.addEventListener('mouseover', () => {
+  buttonThree.classList.add('news-box-hover')
+})
+
+buttonHoverThree.addEventListener('mouseleave', () => {
+  buttonThree.classList.remove('news-box-hover')
+})
+
+buttonHoverFour.addEventListener('mouseover', () => {
+  buttonFour.classList.add('news-box-hover')
+})
+
+buttonHoverFour.addEventListener('mouseleave', () => {
+  buttonFour.classList.remove('news-box-hover')
+})

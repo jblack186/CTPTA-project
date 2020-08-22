@@ -367,7 +367,7 @@ li .list-tag{
 
 .left-side-news {
   width: 24%;
-  background: url('./images/pexels-nick-collins-1292998.jpg');
+  background: url('./images/blue-art.jpg');
   background-size: cover;
   color: white;
   font-size: 2rem;
@@ -409,7 +409,7 @@ li .list-tag{
 
 .right-side-news {
   width: 24%;
-  background: url('./images/pexels-nick-collins-1292998.jpg');
+  background: url('./images/blue-art.jpg');
   background-size: cover;
   color: white;
   font-size: 2rem;
@@ -444,7 +444,6 @@ li .list-tag{
   width: 48%;
   height: 190px;
   background: url('');
-  transition: background .1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -465,9 +464,32 @@ li .list-tag{
   border-radius: 5px;
 }
 
-.news-box button:hover {
-  color: black;
+/* .news-box button:hover {
+  background: url('./images/blue-art.jpg');
+  background-size: contain;
+  ;
+} */
+
+.news-box-hover {
+  background: url('./images/blue-art.jpg');
+  background-size: contain;
+  animation: buttonSlide;
+  animation-duration: .2s;
+  
 }
+
+@keyframes buttonSlide {
+  from {
+    width: 112px;
+    height: 40px;
+  }
+  to {
+    background: url('./images/blue-art.jpg');
+    width:  130px;
+    height: 60px;
+  }
+}
+
 
 .news-content {
   margin: 0 auto;
@@ -549,7 +571,7 @@ li .list-tag{
   width: 100%;
   display: flex;
   align-items: center;
-background-color: whitesmoke;
+  background-color: lightgray;
 }
 
 
@@ -568,7 +590,11 @@ background-color: whitesmoke;
   font-size: 2rem;
   color: white;
   font-weight: 800;
-
+  box-shadow: 5px 5px 8px dodger` 
+  
+  
+  
+  blue, 10px 10px 8px orange, 15px 15px 8px black;
 }
 
 .subscribe .form input {
