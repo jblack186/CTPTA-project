@@ -347,10 +347,15 @@ li .list-tag{
   min-height: 550px;
   max-height: 550px;
   
-  /* background: url(./images/pexels-magda-ehlers-4116707.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
+
+@media screen and (max-width: 1000px) {
+  .carousel-item img {
+    min-height: 350px;
+    max-height: 350px;
+    }
+}
+
 
 .news-social-container {
   background-color: whitesmoke;
@@ -365,6 +370,15 @@ li .list-tag{
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1000px) {
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+
 .left-side-news {
   width: 24%;
   background: url('./images/blue-art.jpg');
@@ -376,6 +390,14 @@ li .list-tag{
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 1000px) {
+  .left-side-news {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
 
 
 .left-side-news p {
@@ -407,6 +429,15 @@ li .list-tag{
 
 }
 
+@media screen and (max-width: 1000px) {
+  .mid-news {
+    width: 95%;
+    margin: 0 auto;
+    
+  }
+}
+
+
 .right-side-news {
   width: 24%;
   background: url('./images/blue-art.jpg');
@@ -419,6 +450,14 @@ li .list-tag{
   align-items: center;
 
 }
+
+@media screen and (max-width: 1000px) {
+  .right-side-news {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
 
 .right-side-news p {
   width: 70%;
@@ -451,6 +490,7 @@ li .list-tag{
   font-size: 1.2rem;
   background-color: white;
 }
+
 
 .news-box h3 {
   padding-bottom: 10px;
@@ -579,7 +619,8 @@ li .list-tag{
   height: 150px;
   width: 70%;
   background: url('./images/classroom.jpg');
-  background-size: cover;
+  backdrop-filter: blur(100px);
+    background-size: cover;
   background-position: center;
   margin: 0 auto;
   border-top-right-radius: 10px;
@@ -587,15 +628,23 @@ li .list-tag{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.5rem;
+  color: black;
   font-weight: 800;
-  box-shadow: 5px 5px 8px dodger` 
-  
-  
-  
-  blue, 10px 10px 8px orange, 15px 15px 8px black;
+  box-shadow: 5px 5px 8px dodgerblue, 10px 10px 8px orange, 15px 15px 8px black;
+
 }
+
+.subscribe .form h3 {
+  background-color: white;
+  border-radius: 5px;;
+}
+
+@media screen and (max-width: 1000px) {
+  .subscribe .form h3 {
+    display: none;
+}
+
 
 .subscribe .form input {
   font-size: 1rem;
@@ -608,8 +657,8 @@ li .list-tag{
 
 footer {
   height: 300px;
-  background-color: whitesmoke;
-  color: black;
+  background-color: #366496;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
