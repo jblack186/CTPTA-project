@@ -1,0 +1,28 @@
+{
+  "name": "ctpta-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-css --include-path css css/styles.css build/css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jblack186/CTPTA-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jblack186/CTPTA-project/issues"
+  },
+  "homepage": "https://github.com/jblack186/CTPTA-project#readme",
+  "dependencies": {
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.2",
+    "node-css": "^0.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
