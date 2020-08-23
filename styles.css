@@ -482,7 +482,6 @@ li .list-tag{
 .news-box {
   width: 48%;
   height: 190px;
-  background: url('');
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -504,11 +503,6 @@ li .list-tag{
   border-radius: 5px;
 }
 
-/* .news-box button:hover {
-  background: url('./images/blue-art.jpg');
-  background-size: contain;
-  ;
-} */
 
 .news-box-hover {
   background: url('./images/blue-art.jpg');
@@ -580,7 +574,7 @@ li .list-tag{
 
 @keyframes slide {
   from {
-      transform: translateX(-100%)
+      transform: translateX(-100%);
   }
   to {
       transform: translateX(0%);
@@ -645,7 +639,7 @@ li .list-tag{
     display: none;
 }
 
-
+}
 .subscribe .form input {
   font-size: 1rem;
   width: 20rem;
@@ -660,18 +654,79 @@ footer {
   background-color: #366496;
   color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
 }
 
 .footer-content {
-  width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+
+.left-footer {
+  width: 35%;
+  height: 100%;
+}
+
+.mid-footer {
+    text-align: right;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .mid-footer {
+    text-align: center;
+  }
+
+}
+
+.right-footer {
   text-align: center;
 }
 
-.footer-text {
-  margin-top: 15px;
-  font-size: rem;
+@media screen and (max-width: 1000px) {
+  .right-footer {
+    padding-top: 15px;
+  }
+
 }
+.right-footer img.footer-logo {
+  width: 13rem;
+}
+
+
+.footer-content img{
+  width: 25rem;
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .left-footer {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .footer-content img {
+    display: none;
+  }
+}
+
+
